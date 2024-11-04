@@ -1,0 +1,911 @@
+/* Fonts */
+@font-face {
+  font-family: Montserrat-100;
+  src: url(../Montserrat/Montserrat-Thin.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: Montserrat-200;
+  src: url(../Montserrat/Montserrat-ExtraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: Montserrat-300;
+  src: url(../Montserrat/Montserrat-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Montserrat-400;
+  src: url(../Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Montserrat-500;
+  src: url(../Montserrat/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Montserrat-600;
+  src: url(../Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Montserrat-700;
+  src: url(../Montserrat/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Montserrat-800;
+  src: url(../Montserrat/Montserrat-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Montserrat-900;
+  src: url(../Montserrat/Montserrat-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: Poppins-100;
+  src: url(../Poppins/Poppins-Thin.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: Poppins-200;
+  src: url(../Poppins/Poppins-ExtraLight.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: Poppins-300;
+  src: url(../Poppins/Poppins-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Poppins-400;
+  src: url(../Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Poppins-500;
+  src: url(../Poppins/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Poppins-600;
+  src: url(../Poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Poppins-700;
+  src: url(../Poppins/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Poppins-800;
+  src: url(../Poppins/Poppins-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Poppins-900;
+  src: url(../Poppins/Poppins-Black.ttf);
+  font-weight: 900;
+}
+
+/* General */
+.section-padding {
+  padding: 100px 0px 70px;
+}
+/* the width of the container in this website is different than default
+so i divided the width of container in px (1170px) with the width of the whole page
+(1519.2px) and got that the percentage of the container is 77% of the 
+website's width.  */
+.container {
+  width: 77%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    min-width: 100% !important;
+  }
+}
+
+/* navbar */
+
+.navbar {
+  padding: 20px 0px;
+}
+nav .my-nav {
+  font-family: Montserrat-800;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+nav .nav-item {
+  font-family: Poppins-400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+nav .nav-item a {
+  color: #fff;
+}
+
+nav .nav-item a:hover {
+  color: #fff;
+}
+
+.nav-item .active {
+  position: relative;
+}
+
+.nav-item .active:after {
+  content: "";
+  width: 41.57px;
+  height: 2px;
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  background-color: #fff;
+}
+
+
+/* Header */
+header {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.6) 0% 100%),
+    url(../images/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header .content h3 {
+  font-family: Montserrat-800;
+  color: #fff;
+  font-size: 50px;
+  line-height: 55px;
+}
+
+header .content p {
+  font-family: Montserrat-200;
+  color: #fff;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+header .content p::after {
+  content: "";
+  font-family: Montserrat-400;
+  color: #fff;
+  font-size: 60px;
+  line-height: 72px;
+  animation: typing 5s infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "Larry Daniels |";
+  }
+  2% {
+    content: "Larry Daniel|";
+  }
+  4% {
+    content: "Larry Danie|";
+  }
+  6% {
+    content: "Larry Dani|";
+  }
+  8% {
+    content: "Larry Dan|";
+  }
+  10% {
+    content: "Larry Da|";
+  }
+  12% {
+    content: "Larry D|";
+  }
+  13% {
+    content: "Larry|";
+  }
+  14% {
+    content: "Larr|";
+  }
+  16% {
+    content: "Lar|";
+  }
+  18% {
+    content: "La|";
+  }
+  20% {
+    content: "L|";
+  }
+  22% {
+    content: "|";
+  }
+  24% {
+    content: "D|";
+  }
+  26% {
+    content: "De|";
+  }
+  28% {
+    content: "Dev|";
+  }
+  30% {
+    content: "Deve|";
+  }
+  32% {
+    content: "Devel|";
+  }
+  34% {
+    content: "Develo|";
+  }
+  36% {
+    content: "Develop|";
+  }
+  38% {
+    content: "Develope|";
+  }
+  40% {
+    content: "Developer|";
+  }
+  42% {
+    content: "Develope|";
+  }
+  44% {
+    content: "Develop|";
+  }
+  46% {
+    content: "Develo|";
+  }
+  48% {
+    content: "Devel|";
+  }
+  50% {
+    content: "Deve|";
+  }
+  52% {
+    content: "Dev|";
+  }
+  53% {
+    content: "De|";
+  }
+  54% {
+    content: "D|";
+  }
+  56% {
+    content: "|";
+  }
+  58% {
+    content: "D|";
+  }
+  60% {
+    content: "De|";
+  }
+  61% {
+    content: "Des|";
+  }
+  62% {
+    content: "Desi|";
+  }
+  64% {
+    content: "Desig|";
+  }
+  66% {
+    content: "Design|";
+  }
+  67% {
+    content: "Designe|";
+  }
+  68% {
+    content: "Designer |";
+  }
+  70% {
+    content: "Designe|";
+  }
+  72% {
+    content: "Design|";
+  }
+  73% {
+    content: "Desig|";
+  }
+  74% {
+    content: "Desi|";
+  }
+  76% {
+    content: "Des|";
+  }
+  78% {
+    content: "De|";
+  }
+  79% {
+    content: "D|";
+  }
+  80% {
+    content: "|";
+  }
+  82% {
+    content: "L|";
+  }
+  84% {
+    content: "La|";
+  }
+  85% {
+    content: "Lar|";
+  }
+  86% {
+    content: "Larr|";
+  }
+  88% {
+    content: "Larry|";
+  }
+  90% {
+    content: "Larry |";
+  }
+  91% {
+    content: "Larry D|";
+  }
+  92% {
+    content: "Larry Da|";
+  }
+  94% {
+    content: "Larry Dan|";
+  }
+  96% {
+    content: "Larry Dani|";
+  }
+  97% {
+    content: "Larry Danie|";
+  }
+  98% {
+    content: "Larry Daniel|";
+  }
+  100% {
+    content: "Larry Daniels|";
+  }
+}
+
+header .content li {
+  border: 1px solid #030d14;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #030d14;
+  width: 35px;
+  height: 35px;
+}
+
+header .content a {
+  color: #fff;
+}
+
+header .content li i {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* about */
+
+#about .layer {
+  background-image: url(../imgs/dots.png);
+  position: absolute;
+  top: 23%;
+  left: -5%;
+  background-repeat: repeat;
+  width: 80%;
+  height: 82%;
+}
+
+#about .right h3 {
+  font-family: Montserrat-800;
+  color: rgb(52, 52, 52);
+  font-size: 30px;
+  line-height: 33px;
+}
+
+#about .right .under-title {
+  font-family: Poppins-400;
+  color: #999;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#about .right .parg {
+  font-family: Poppins-400;
+  color: #748182;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#about .right .parg span {
+  font-family: Poppins-700;
+}
+
+#about .right .prog {
+  margin-top: 30px;
+}
+
+#about .right .prog .progress {
+  color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  height: 24.3px;
+}
+
+#about .right .prog .progress-bar {
+  background-color: #1c1c1c;
+  border-radius: 5px;
+}
+
+#about .right .prog .progress-bar span {
+  font-family: Montserrat-500;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  line-height: 14px;
+}
+#about .right .prog .progress-bar .percent {
+  font-size: 11px;
+  font-family: Montserrat-400;
+}
+
+#about .right .buttons a {
+  padding: 10px 30px;
+  border: 0.8px solid #222222;
+  margin-top: 20px;
+  font-family: Poppins-400;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+#about .right .buttons .btn-1 {
+  background-color: #1c1c1c;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#about .right .buttons .btn-1:hover {
+  background-color: #fff;
+  color: #343434;
+}
+
+#about .right .buttons .btn-2 {
+  background-color: #ffffff;
+  color: #343434;
+  transition: all 0.3s ease-in-out;
+}
+
+#about .right .buttons .btn-2:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+/* Services */
+
+#services {
+  background-color: #f7f7f7;
+  z-index: 0;
+}
+
+#services .title h3,
+#Portfolio .title h3,
+#Testimonials .title h3,
+#team .title h3,
+#contact .title h3 {
+  font-family: Montserrat-900;
+  color: #343434;
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 80px;
+  z-index: 1;
+}
+
+#services .title h3::after,
+#Portfolio .title h3::after,
+#Testimonials .title h3::after,
+#team .title h3::after,
+#contact .title h3::after {
+  content: "";
+  background-image: url(../imgs/dots.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: repeat;
+  width: 195px;
+  height: 50%;
+  z-index: -1;
+}
+
+#services .items .item {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 7px #ebebeb;
+}
+
+#services .items .item span,
+#contact .item span {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out;
+  margin-bottom: 20px;
+}
+
+#services .items .item:hover span,
+#contact .item:hover span {
+  background-color: #1c1c1c;
+}
+
+#services .items .item:hover i,
+#contact .item:hover i {
+  color: #fff;
+}
+
+#services .items .item span i,
+#contact .item span i {
+  font-size: 30px;
+  line-height: 30px;
+  transition: color 0.5s ease-in-out;
+}
+
+#services .items .item h6{
+  font-family: Montserrat-800;
+  color: #343434;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+#services .items .item p{
+  font-family: Poppins-400;
+  color: #748182;
+  font-size: 14px;
+  line-height: 22px;
+  width: 94%;
+  margin: auto;
+}
+
+/* Portfolio. */
+
+#Portfolio {
+  background-color: #ffffff;
+  z-index: 0;
+}
+
+#Portfolio .item .layer {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  z-index: 99;
+  top: 15px;
+  left: 18px;
+  right: 18px;
+  bottom: 0px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#Portfolio .item:hover .layer {
+  opacity: 1;
+  top: 5px;
+  bottom: 5px;
+}
+
+#Portfolio .item .layer h6 {
+  font-family: Montserrat-700;
+  color: #343434;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-align: center;
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+
+#Portfolio .item:hover h6{
+  top: 105px;
+}
+
+#Portfolio .item .layer .icons {
+  text-align: center;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+
+
+#Portfolio .item .layer .icons a {
+  color: #fff;
+}
+
+#Portfolio .item .layer .icons span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #030d14;
+}
+
+#Portfolio .item .layer .icons i {
+  font-size: 12px;
+}
+
+#Portfolio .navs nav{
+  margin-bottom: 50px;
+}
+
+#Portfolio .navs nav button{
+    font-family: Poppins-700;
+    color: #222;
+    font-size: 16px;
+    line-height: 23px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/* I brought this from bootstrap code to remove underline that appears 
+when i hover. */
+.nav-underline .nav-link:hover{
+  border-bottom-color: transparent;
+}
+
+/* Testimonials */
+#Testimonials {
+  background-color: #f7f7f7;
+  z-index: 0;
+  padding-bottom: 120px;
+}
+
+#Testimonials .title h3::after{
+  width: 287.73px;
+}
+
+#Testimonials .carousel-inner img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#Testimonials .carousel-inner p{
+  width: 80%;
+  margin: auto;
+  font-family: Poppins-400;
+  color: #748182;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#Testimonials .carousel-inner h6{
+  margin: 30px 0px 5px;
+  font-family: Montserrat-600;
+  color: #343434;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+#Testimonials .carousel-inner .captions span{
+  margin-bottom: 30px;
+  font-family: Poppins-600;
+  color: #888;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+#Testimonials .carousel-indicators{
+  position:absolute;
+  top: 110%;
+}
+
+#Testimonials .carousel-indicators button{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+}
+
+#Testimonials .carousel-indicators button:hover{
+  background-color:#869791 ;
+}
+
+#Testimonials .carousel-indicators button.active{
+  background-color:#869791 ;
+}
+
+/* Numbers */
+
+.numbers .item span{
+  display: block;
+  margin-bottom: 15px;
+}
+
+.numbers .item i{
+  font-size: 30px;
+}
+
+.numbers .item h3{
+  font-family: Montserrat-900;
+  color: #343434;
+  font-size: 30px;
+  line-height: 33px;
+  margin-bottom: 15px;
+}
+
+.numbers .item p{
+  font-family: Poppins-600;
+  color: #748182;
+  font-size: 15px;
+  line-height: 24px;
+  /* margin-bottom: 30px; */
+}
+
+/* Team */
+
+#team {
+  background-color: #F7F7F7;
+  z-index: 0;
+}
+
+#team .title h3::after{
+  width: 220.89px;
+}
+
+#team .crd .caption{
+  padding: 25px;
+  background-color: #5B5B5B;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#team .crd .caption h4{
+  font-family: Montserrat-500;
+  color: #fff;
+  font-size: 25px;
+  line-height: 28px;
+}
+
+#team .crd .caption h6{
+  font-family: Montserrat-700;
+  color: #fff;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+/* scale layer first si it will start small then grow larger */
+#team .crd .layer{
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  transition: all 0.5s;
+  transform: scale(0.5,0.5);
+}
+
+/* Scale it larger then rotate it */
+#team .crd:hover .layer{
+  transform: rotateY(180deg) scale(0.99,0.99);
+  opacity: 1;
+}
+
+
+#team .imgg{
+  overflow: hidden;
+}
+
+#team img{
+  transition: all 0.5s;
+}
+
+#team .imag:hover img{
+  transform: scale(1.2);
+}
+
+#team .layer li{
+  transform: rotateY(180deg);
+  list-style: none;
+  /* padding: 0px 5px; */
+  background-color: #000000;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+#team .layer li:hover{
+  background-color: #fff;
+}
+#team .layer li:hover a{
+  color:#000000;
+}
+
+#team .layer li a{
+  color: #fff;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+/* Contact */
+#contact {
+  background-color:#FFFFFF;
+  z-index: 0;
+}
+
+#contact .title h3::after{
+  width: 250.25px;
+}
+
+#contact .item{
+  margin-bottom: 30px;
+}
+
+#contact .item p {
+  font-family: Poppins-400;
+  color: #748182;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#contact .item h6{
+  font-family: Montserrat-700;
+  color: #343434;
+  font-size: 16px;
+  line-height: 18px;
+}  
+
+.my-form input,
+.my-form textarea{
+  background-color: #F4F4F4;
+  padding: 10px;
+  border: transparent ;
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.my-form textarea{
+  height: 160px;
+  margin-bottom: 15px;
+}
+
+.txt-emil{
+  padding-bottom: 15px;
+}
+
+#contact button{
+  padding: 10px 40px;
+  color: #fff;
+  background-color: #000000;
+  font-family: Poppins-400;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+/* footer */
+
+footer{
+  background-color: #1C1C1C;
+  padding: 30px;
+}
+footer p{
+  font-family: Poppins-400;
+  color: #748182;
+  font-size: 13px;
+  /* line-height: 21px; */
+  text-align: center  ;
+  margin-bottom: 0;
+}
